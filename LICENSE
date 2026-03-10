@@ -17,7 +17,7 @@ LoadingText.Size = UDim2.new(0, 200, 0, 50)
 LoadingText.Position = UDim2.new(0.5, -100, 0.5, -25)
 LoadingText.BackgroundTransparency = 1
 LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
-LoadingText.Text = "جاري تحميل أستاروث..."
+LoadingText.Text = "جاري تحميل سكربت ZERO..."
 LoadingText.Font = Enum.Font.GothamBold
 LoadingText.TextSize = 25
 
@@ -40,7 +40,7 @@ end
 task.spawn(AnimateLoading)
 -- تحميل المكتبة
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("SCRIPT KILLER", "BloodTheme")
+local Window = Library.CreateLib("SCRIPT ZERO CLAN", "BLACK")
 
 
 local Players = game:GetService("Players")
@@ -53,7 +53,7 @@ local RunService = game:GetService("RunService")
 -- (باقي السكربت كما هو في الأعلى...)
 -- 1. تبويب السكربتات
 local Tab1 = Window:NewTab("سكربتات")
-local Section1 = Tab1:NewSection("سكربت المطور استاروث")
+local Section1 = Tab1:NewSection("سكربت ZERO")
 Section1:NewButton("vr7", "سكربت المطور استا روث", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP"))() end)
 Section1:NewButton("بروتون الجديد", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/bruton-lua-sources/LOC4T-HUB/refs/heads/main/LOC4T%20HUB"))() end)
 Section1:NewButton("سكربت الشات", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Gaurav-0196/Mickey-Chat/refs/heads/main/MickeyChat"))() end) 
@@ -118,7 +118,7 @@ Section3:NewToggle("تفعيل Skybox", "تشغيل/إيقاف التأثير", 
 
 local SpamSpeed = 1
 local phoneAuto = false
-Section3:NewSlider("قوة السبام", "عدد النقرات", 1000, 1, function(s) SpamSpeed = s end)
+Section3:NewSlider("قوة السبام", "عدد النقرات", 100000, 1, function(s) SpamSpeed = s end)
 Section3:NewButton("انتقال للمحل", "الانتقال وتغيير المحل", function()
     LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-118.8, 21.5, 245.5)
     task.wait(0.5) pcall(function() ReplicatedStorage.Remotes.ChangeStore:FireServer() end)
@@ -185,7 +185,7 @@ task.spawn(function()
     pcall(function()
         ReplicatedStorage.RE["1RPNam1eColo1r"]:FireServer("PickingRPNameColor", Color3.fromRGB(255, 0, 0))
         ReplicatedStorage.RE["1RPNam1eColo1r"]:FireServer("PickingRPBioColor", Color3.fromRGB(0, 0, 0))
-        ReplicatedStorage.RE["1RPNam1eTex1t"]:FireServer("RolePlayName", "تم تفعيل سكربت المطور أستاروث")
-        ReplicatedStorage.RE["1RPNam1eTex1t"]:FireServer("RolePlayBio", "سكربت أستاروث")
+        ReplicatedStorage.RE["1RPNam1eTex1t"]:FireServer("RolePlayName", "تم تفعيل سكربت 𝑍𝐸𝑅𝑂 𝐶𝐿𝐴𝑁")
+        ReplicatedStorage.RE["1RPNam1eTex1t"]:FireServer("RolePlayBio", "★彡ZERO CLAN彡★")
     end)
 end)
